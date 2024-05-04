@@ -1,0 +1,511 @@
+/*Fonts*/
+@font-face {
+    font-family: 'IBMPlexMono';
+    src: url('./fonts/woff2/IBMPlexMono-Thin.woff2') format('woff2'),
+         url('./fonts/ttf/IBMPlexMono-Thin.ttf') format('truetype');  /* TTF fallback */
+    font-weight: 100;
+  }
+  
+  @font-face {
+    font-family: 'IBMPlexMono';
+    src: url('./fonts/woff2/IBMPlexMono-ExtraLight.woff2') format('woff2'),
+         url('./fonts/ttf/IBMPlexMono-ExtraLight.ttf') format('truetype');  /* TTF fallback */
+    font-weight: 200;
+  }
+  
+  @font-face {
+    font-family: 'IBMPlexMono';
+    src: url('./fonts/woff2/IBMPlexMono-Light.woff2') format('woff2'),
+         url('./fonts/ttf/IBMPlexMono-Light.ttf') format('truetype');  /* TTF fallback */
+    font-weight: 300;
+  }
+  
+  @font-face {
+    font-family: 'IBMPlexMono';
+    src: url('./fonts/woff2/IBMPlexMono-Regular.woff2') format('woff2'),
+         url('./fonts/ttf/IBMPlexMono-Regular.ttf') format('truetype'); /* Regular weight uses TTF only */
+    font-weight: 400;
+  }
+  
+  @font-face {
+    font-family: 'IBMPlexMono';
+    src: url('./fonts/woff2/IBMPlexMono-Medium.woff2') format('woff2'),
+         url('./fonts/ttf/IBMPlexMono-Medium.ttf') format('truetype');  /* TTF fallback */
+    font-weight: 500;
+  }
+  
+  @font-face {
+    font-family: 'IBMPlexMono';
+    src: url('./fonts/woff2/IBMPlexMono-SemiBold.woff2') format('woff2'),
+         url('./fonts/ttf/IBMPlexMono-SemiBold.ttf') format('truetype');  /* TTF fallback */
+    font-weight: 600;
+  }
+  
+  @font-face {
+    font-family: 'IBMPlexMono';
+    src: url('./fonts/woff2/IBMPlexMono-Bold.woff2') format('woff2'),  /* Bold weight uses WOFF2 only */
+         url('./fonts/ttf/IBMPlexMono-Bold.ttf') format('truetype');  /* TTF fallback */
+    font-weight: 700;
+  }
+  
+
+/*Usual CSS begins from here*/
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+
+html {
+    background-color: #0c1827;
+}
+
+
+
+.header {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    background-color: #00ffd9;
+    font-size: 80px;
+    font-family: 'IBMPlexMono';
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.blog-header, .about-header, .contact-header {
+    color: #0c1827;
+}
+
+a {
+    text-decoration: none;
+    color: #00ffd9;
+}
+
+a:hover {
+    color: #347976;
+}
+
+*::selection {
+    color: #0c1827;
+    background-color: #008079;
+}
+
+.blog-header:hover {
+    text-decoration: underline;
+}
+
+.about-header:hover {
+    text-decoration: underline;
+}
+
+.contact-header:hover {
+    text-decoration: underline;
+}
+
+
+.header-description {
+    color: white;
+    font-family: 'IBMPlexMono';
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+    border-width: 0px 0px 1.5px 0px;
+    margin-bottom: 70px;
+}
+
+
+.blog-time, .blog-category, .blog-title {
+    font-size: 30px;
+    color: white;
+    font-family: 'IBMPlexMono';
+    font-weight: 700;
+}
+
+.blog-title {
+    font-size: 80px;
+    font-weight: 400;
+    color: #00ffd9;
+    text-align: center;
+}
+
+
+.blog-posts {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-top: 60px;
+}
+
+.blog-category {
+    color: #ffffff8e;
+    border: 1px solid;
+    border-width: 0px 0px 5px 0px;
+    padding: 5px;
+}
+
+.blog-time {
+    color: #e4b588;
+    border: 1px solid;
+    border-width: 5px 0px 0px 0px;
+}
+
+.header-description-flex {
+    font-size: 18px;
+}
+
+
+/* Article Styling*/
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.article-category, .article-title, .article-subheading, .article-author, .article-time {
+    font-family: 'IBMPlexMono';
+    font-weight: 300;
+    font-size: 30px;
+    color: #00ffd9;
+    margin-bottom: 20px;
+}
+
+.article-category, .article-author {
+    font-size: 30px;
+}
+
+.article-title {
+    font-size: 60px;
+    font-weight: 500;
+    color: #00ffd9;
+    text-align: center;
+}
+
+.article-subheading {
+    color: white;
+    font-weight: 400;
+}
+
+.article-author {
+    color: #e4b588;
+    font-family: 'IBMPlexMono';
+    font-weight: 300;
+    font-size: 30px;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+
+.article-category {
+    color: #708090;
+}
+
+.author-time {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-right: 10px;
+}
+
+.article-time {    
+   color: #ffffff8e;
+   font-family: 'IBMPLexMono';
+   font-weight: 200;
+   font-weight: 300;
+   font-size: 30px;
+   padding: 5px;
+}
+
+.article-para {
+    font-family: 'IBMPLexMono';
+    font-weight: 300;
+    font-size: 25px;
+    font-weight: 300;
+    color: #e6ebf0;
+    text-align: left;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+
+.article-head {
+    font-family: 'IBMPLexMono';
+    font-weight: 300;
+    font-size: 50px;
+    color: #66fcf1;
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.article-details {
+    display: block;
+    width: 55%;
+    
+}
+
+.article-details-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.paragraphs {
+    display: block;
+    width: 55%;
+}
+
+.paragraphs-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.fullblock {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background-color: #00ffd9;
+    margin-left: 5px;
+}
+
+.horizontal-divider-10px {
+    height: 1px;
+    background-color: #00ffd9;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.horizontal-divider-20px {
+    height: 1px;
+    background-color: #00ffd9;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.horizontal-divider-30px {
+    height: 1px;
+    background-color: #00ffd9;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.blog-html {
+    background-color: #0c1827;
+}
+
+.blog-name {
+    font-size: 80px;
+    font-family: 'IBMPlexMono';
+    font-weight: 400;
+    color: white;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.blog-posts-header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 60px;
+}
+
+.blog-name {
+    color: #00ffd9;
+    font-size: 100px;
+}
+
+.blog-intro {
+    font-size: 30px;
+    font-family: 'IBMPlexMono';
+    font-weight: 400;
+    color: aliceblue;
+    max-width: 1200px;
+    margin-left: 15px;
+}
+
+.child {
+    color: #93999f;
+    border-width: 0px 3px 3px 3px;
+    height: 450px;
+    width: 450px;
+    font-size: 40px;
+    margin: 30px;
+    padding: 10px;
+    border: 3px solid #93999f;
+    font-weight: 300;
+}
+
+
+.child-blog-date {
+    background-color: #93999f;
+    text-align: center;
+    color: #0c1827;
+    font-family: 'IBMPlexMono';
+    font-weight: 600;
+    margin: 10px;
+    height: 50px;
+}
+
+.child-blog-category {
+    background-color: #e4b588;
+    text-align: center;
+    color: #0c1827;
+    font-family: 'IBMPlexMono';
+    font-weight: 600;
+    margin: 10px;
+    height: 50px;
+}
+
+
+.child-blog-title {
+    font-family: 'IBMPlexMono';
+    font-weight: 400;
+    font-size: 35px;
+    color: white;
+    background-color: #0c1827;
+    margin: 20px;
+    height: 230px;
+    text-align: left;
+    border: 2px solid #00ffd9;
+    padding: 20px;
+}
+
+
+.parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 30px;
+}
+
+.child-blog-read {
+    text-align: center;
+    background-color: #0c1827;
+    color: #93999f;
+    font-family: 'IBMPlexMono';
+    font-weight: 600;
+    font-size: 35px;
+    margin: 10px;
+    height: 50px;
+    border: 3px solid #93999f;
+    border-width: 3px 0px 3px 0px;
+}
+
+
+.child-blog-read:hover {
+    color: #00ffd9;
+    border-color: #00ffd9;
+}
+
+.checkout-my-blog {
+    font-family: 'IBMPlexMono';
+    font-weight: 300;
+    font-size: 100px ;
+    text-align: center;
+}
+
+.checkout {
+    color: #00ffd9;
+    font-weight: 300;
+}
+
+/* Optimizations for Mobile Phones*/
+@media (max-width: 480px) {
+
+    .header {
+    gap: 20px;
+    font-size: 40px;
+    margin-bottom: 10px;
+    }
+
+    .header-description {
+        color: white;
+        font-family: 'IBMPlexMono';
+        font-size: 20px;
+        font-weight: 300;
+        text-align: center;
+        border-width: 0px 0px 1.5px 0px;
+        margin-bottom: 30px;
+    }
+    
+    .article-subheading {
+        width: 100%;
+        font-size: 25px;
+        font-weight: 400;
+    }
+
+    .article-time {
+        font-size: 25px;    
+    }
+
+    .article-author {
+        font-size: 25px;
+    }
+
+    .paragraphs {
+        width: 93%;
+    }
+
+    .article-category {
+        font-size: 20px;
+    }
+
+    .article-head {
+        font-size: 40px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .article-para {
+    font-size: 22px;
+    line-height: 1.3;
+    color: #e6ebf0;;
+    }
+
+    .article-details {
+        width: 90%;
+    }
+
+    .checkout-my-blog {
+        font-size: 50px;
+    }
+
+    .blog-posts-header {
+        margin-left: 10px;
+    }
+
+    .parent {
+        grid-template-columns: 1fr;
+        margin: 1px;
+    }
+    
+    .child {
+        width: 300px;
+        margin: 15px;
+        height: 530px;
+        font-size: 27px;
+        padding: 10px;
+    }
+
+    .child-blog-title {
+        font-size: 30px;
+        margin: 20px;
+        height: 260px;
+        padding: 20px;
+    }
+
+    .blog-name {
+        font-size: 60px;
+        margin-left: 10px;
+    }
+
+    .blog-intro {
+        font-size: 20px;
+        margin-bottom: 10px;
+        margin-left: 16px;
+    }
+
+}
