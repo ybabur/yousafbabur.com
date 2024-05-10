@@ -5,49 +5,49 @@
          url('./fonts/ttf/IBMPlexMono-Thin.ttf') format('truetype');  /* TTF fallback */
     font-weight: 100;
   }
-  
+
   @font-face {
     font-family: 'IBMPlexMono';
     src: url('./fonts/woff2/IBMPlexMono-ExtraLight.woff2') format('woff2'),
          url('./fonts/ttf/IBMPlexMono-ExtraLight.ttf') format('truetype');  /* TTF fallback */
     font-weight: 200;
   }
-  
+
   @font-face {
     font-family: 'IBMPlexMono';
     src: url('./fonts/woff2/IBMPlexMono-Light.woff2') format('woff2'),
          url('./fonts/ttf/IBMPlexMono-Light.ttf') format('truetype');  /* TTF fallback */
     font-weight: 300;
   }
-  
+
   @font-face {
     font-family: 'IBMPlexMono';
     src: url('./fonts/woff2/IBMPlexMono-Regular.woff2') format('woff2'),
          url('./fonts/ttf/IBMPlexMono-Regular.ttf') format('truetype'); /* Regular weight uses TTF only */
     font-weight: 400;
   }
-  
+
   @font-face {
     font-family: 'IBMPlexMono';
     src: url('./fonts/woff2/IBMPlexMono-Medium.woff2') format('woff2'),
          url('./fonts/ttf/IBMPlexMono-Medium.ttf') format('truetype');  /* TTF fallback */
     font-weight: 500;
   }
-  
+
   @font-face {
     font-family: 'IBMPlexMono';
     src: url('./fonts/woff2/IBMPlexMono-SemiBold.woff2') format('woff2'),
          url('./fonts/ttf/IBMPlexMono-SemiBold.ttf') format('truetype');  /* TTF fallback */
     font-weight: 600;
   }
-  
+
   @font-face {
     font-family: 'IBMPlexMono';
     src: url('./fonts/woff2/IBMPlexMono-Bold.woff2') format('woff2'),  /* Bold weight uses WOFF2 only */
          url('./fonts/ttf/IBMPlexMono-Bold.ttf') format('truetype');  /* TTF fallback */
     font-weight: 700;
   }
-  
+
 
 /*Usual CSS begins from here*/
 * {
@@ -60,8 +60,6 @@
 html {
     background-color: #0c1827;
 }
-
-
 
 .header {
     display: flex;
@@ -92,6 +90,10 @@ a:hover {
 *::selection {
     color: #0c1827;
     background-color: #008079;
+}
+
+li::marker {
+  color: #00ffd9;
 }
 
 .blog-header:hover {
@@ -212,7 +214,7 @@ a:hover {
     margin-right: 10px;
 }
 
-.article-time {    
+.article-time {
    color: #ffffff8e;
    font-family: 'IBMPLexMono';
    font-weight: 200;
@@ -232,6 +234,16 @@ a:hover {
     line-height: 1.5;
 }
 
+.article-list {
+    font-family: 'IBMPLexMono';
+    font-weight: 300;
+    font-size: 25px;
+    font-weight: 300;
+    color: #e6ebf0;
+    text-align: left;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
 
 .article-head {
     font-family: 'IBMPLexMono';
@@ -246,7 +258,7 @@ a:hover {
 .article-details {
     display: block;
     width: 55%;
-    
+
 }
 
 .article-details-flex {
@@ -430,7 +442,7 @@ a:hover {
         border-width: 0px 0px 1.5px 0px;
         margin-bottom: 30px;
     }
-    
+
     .article-subheading {
         width: 100%;
         font-size: 25px;
@@ -438,7 +450,7 @@ a:hover {
     }
 
     .article-time {
-        font-size: 25px;    
+        font-size: 25px;
     }
 
     .article-author {
@@ -481,7 +493,7 @@ a:hover {
         grid-template-columns: 1fr;
         margin: 1px;
     }
-    
+
     .child {
         width: 300px;
         margin: 15px;

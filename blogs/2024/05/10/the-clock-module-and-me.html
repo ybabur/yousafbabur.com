@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="In this blog post, I share my journey building the clock module for the 8-bit computer and mnention some of the problems I faced during my build of this circuit and how I eventually managed to fix them.">
+    <title>The Clock Module & Me | Yousaf Babur</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+</head>
+<body>
+    <div class="header">
+        <div><a class="blog-header" href="/"><li>Blog</li></a></div>
+        <div><a class="about-header" href="/about.html"><li>About</li></a></div>
+        <div><a class="contact-header" href="/contact.html"><li>Contact</li></a></div>
+    </div>
+    <br>
+   <br>
+   <div class="article-details-flex">
+    <div class="article-details">
+        <div class="articles">
+             <div class="article-category"><h4>8 Bit Computer<h5></div>
+            <div><h1 class="article-title">The Clock Module & Me</h1></div>
+            <div><h2 class="article-subheading">My journey building a working clock circuit for the 8-Bit Computer and a list of common pitfalls for starters to avoid.</h2></div>
+        </div>
+        <div>
+            <div class="author-time">
+            <div><a href="https://yousafbabur.com/"><h5 class="article-author">By Yousaf Babur</h5></a></div>
+            <div><h5 class="article-time">10 May, 2024</h5></div>
+            </div>
+        </div>
+    </div>
+    </div>
+   
+
+    <div class="paragraphs-flex">  
+        <div class="paragraphs">
+            <div class="horizontal-divider-30px"></div>
+            <h3 class="article-head">Clock</h3>
+            <p class="article-para">Being one of the most important modules of the 8-bit Computer project, the Clock module isn't that difficult to build even for a beginner, but for me, I had to spend weeks debugging it. In this blog post, I mention some of the problems I faced during my build of this circuit and how I eventually managed to fix them.</p>
+            <h3 class="article-head">Power Rails</h3>
+            <p class="article-para">I was quick to start the clock circuit and I guess it took me about a week or two to finish building the complete circuit. Mind you, I had no prior experience with building such a circuit before so everything was new to me. As I went through testing the first half of this module - The Astable circuit, everything was fine. The circuit worked as expected. The problem arose as I went further.</p> 
+            <p class="article-para">As I had finished building the Bi-stable circuit - the third circuit for the Clock module, It just wasn't responding to anything. I wasn't seeing any blinking lights, just flat-out nothing. After eyeing it for hours It was then when I started worrying and took matters to my sensei - Google. After going through multiple videos and scrolling through many Reddit posts I found something interesting. It was the fact that some of the breadboards don't have their power rails connected by default and my breadboard was one of those. To simply explain:</p>
+            <p class="article-para">Most breadboards have a single power rail (consisting of positive and negative power lines) on both of their sides. Now, like the breadboard I was using, some breadboards are built differently and have the power divided by a spacer between the middle of the breadboards which as a result created two independent power rails on both sides of the breadboard.</p>
+            <p class="article-para">So, the problem behind my bi-stable circuit not working was that it was not receiving current because the lower power rails of my breadboard were disconnected from the top ones - which were directly connected to the 5v power supply.</p>
+            <p class="article-para">The solution here was simple - Just connect both of the power rails with each other to essentially create a single power rail on both sides and that's exactly what I did by joining negative and positive power rails of the upper and lower half to each other creating a single power rail that was receiving current from the power supply itself.</p>
+            <p class="article-para">The breadboards used by Ben Eater have the power rails already connected but that may not be the case for everyone just like myself.</p>
+            <h3 class="article-head">Unconnected Pins</h3>
+            <p class="article-para">I was done with the completely built clock circuit in about two weeks as I remember but one thing was off - the bi-stable circuit. The last blue-led was sort of working but it was fluctuating for me. Since the final clock output wasn't working as It should.</p>
+            <p class="article-para">It took me about 3 more weeks to see what went wrong with my circuit. During this time I started working on the registers for the 8-bit computer, I would spend some time every day to try and fix the clock circuit. After hopelessly looking out and changing pins for my circuit, a Redditor at r/beneater pointed me to Pin 9 of the LS04 in the bi-stable circuit that I had left unconnected to the ground. That was a moment of utter surprise to me that this pin had been in front of my eyes all this long and still I couldn't see it. As I connected it to ground, I felt inner peace and was finally happy with my clock circuit working.</p>
+            <h3 class="article-head">Double-throw Toggle Switch</h3>
+            <p class="article-para">If you've been following Ben's YouTube playlist, He uses a double-throw toggle switch for the last circuit of the clock module. In the video, he uses an old push-button style switch that one needs to solder with headers to connect to the breadboard because the actual pins are too small to directly insert to the breadboard.</p>
+            <p class="article-para">For those new to soldering, it's quite a challenge at first to solder those 4 pins of the switch with the header pins. And one strange thing that happened to me was that the switch itself started to melt because of my bad soldering skills. To get around that you just have to be fast and to the point with the solder otherwise you'd have to spend hours to get it right and doing that again and again melts the switch itself. Before connecting the switch to the breadboard it helps to check it beforehand using an LED.</p>
+            <p class="article-para">This issue has been addressed in later videos by Ben Eater showing the clock circuit. He's started to use a spdt slide-switch which doesn't need soldering, unlike the initial videos where he uses the double-throw toggle switch. Ben's official 8-bit Computer kits also include this newer switch. So, If you are working with those, you don't need to worry about it.</p>
+            <h3 class="article-head">Electrolytic Capacitors</h3>
+            <p class="article-para">Unlike regular capacitors, electrolytic capacitors have separate positive and ground terminals. The terminals are usually marked. So, if you're using those as Ben does in the clock circuit, make sure they are in the right direction. For the clock circuit, Ben uses a single electrolytic capacitor in the first circuit.</p> 
+            <h3 class="article-head">Conclusion</h3>
+            <p class="article-para">So, Going through the process of building the clock circuit and having it finally work as it should, here's a list of things I would advise people starting with the clock circuit to look for:</p> 
+            <ul class="article-list">
+                <li>Check if your breadboard power rails are connected or not on each side. If not, connect them before proceeding to build the clock circuit</li>
+                <li>Verify the double-throw toggle switches before plugging them into the breadboard and if you don't want to solder, try the newer SPDT slide-switches that Ben uses for his kits</li>
+                <li>Double-check every connection on the breadboard as you make it to avoid tens of hours of troubleshooting afterward</li>
+                <li>Electrolytic capacitors should be rightly aligned based on their positive and negative terminals<span class="fullblock"></span></li></ul> 
+            <div class="horizontal-divider-30px"></div>
+        </div>
+    </div>
+</body>
+</html>
