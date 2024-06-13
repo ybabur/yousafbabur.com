@@ -1,42 +1,57 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
 <url>
-<loc>https://www.yousafbabur.com/</loc>
-<lastmod>2024-03-17T07:01:59+00:00</lastmod>
-<priority>1.00</priority>
+  <loc>https://www.yousafbabur.com/</loc>
+  <lastmod>2024-03-17T07:01:59+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
-<loc>https://www.yousafbabur.com/blog.html</loc>
-<lastmod>2024-05-10T04:09:24+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://www.yousafbabur.com/blog.html</loc>
+  <lastmod>2024-06-13T16:26:33+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://www.yousafbabur.com/about.html</loc>
-<lastmod>2024-02-18T04:24:55+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://www.yousafbabur.com/about.html</loc>
+  <lastmod>2024-02-18T04:24:55+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://www.yousafbabur.com/contact.html</loc>
-<lastmod>2024-02-18T04:24:56+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://www.yousafbabur.com/contact.html</loc>
+  <lastmod>2024-02-18T04:24:56+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://www.yousafbabur.com/blogs/2024/05/10/the-clock-module-and-me.html</loc>
-<lastmod>2024-05-10T04:01:52+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://www.yousafbabur.com/blogs/2024/06/13/letsdefend-soc-analyst-path.html</loc>
+  <lastmod>2024-06-13T16:27:56+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://www.yousafbabur.com/blogs/2024/03/16/to-the-lands-unknown.html</loc>
-<lastmod>2024-03-17T05:29:53+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://www.yousafbabur.com/blogs/2024/05/10/the-clock-module-and-me.html</loc>
+  <lastmod>2024-05-10T04:37:13+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://www.yousafbabur.com/blogs/2024/02/18/getting-the-components.html</loc>
-<lastmod>2024-03-17T05:29:35+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://www.yousafbabur.com/blogs/2024/03/16/to-the-lands-unknown.html</loc>
+  <lastmod>2024-06-07T09:07:38+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://www.yousafbabur.com/index.html</loc>
-<lastmod>2024-03-17T07:01:59+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://www.yousafbabur.com/blogs/2024/02/18/getting-the-components.html</loc>
+  <lastmod>2024-03-17T05:29:35+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
+<url>
+  <loc>https://www.yousafbabur.com/index.html</loc>
+  <lastmod>2024-03-17T07:01:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
 </urlset>
